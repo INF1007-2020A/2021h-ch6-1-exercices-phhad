@@ -8,14 +8,18 @@ def order(values: list = None) -> list:
         # TODO: demander les valeurs ici
         values = []
         while len(values)<10:
-            values.append(input("Veuillez entrer une valeur"))
+            values.append(int(input("Veuillez entrer une valeur")))
 
-    return []
+    return sorted(values)
 
 
 def anagrams(words: list = None) -> bool:
     if words is None:
         # TODO: demander les mots ici
+        words = []
+        while range(len(words)) != words:
+            words.append(str(input("Veuillez entrer un mot")))
+            if():
         pass
 
     return False
@@ -23,8 +27,8 @@ def anagrams(words: list = None) -> bool:
 
 def contains_doubles(items: list) -> bool:
     items = []
-    for int in items:
-        if
+    for i in items:
+        if (i == ):
     return False
 
 
