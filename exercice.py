@@ -3,14 +3,12 @@
 
 
 def order(values: list = None) -> list:
-    values = []
-    for j in values:
-        if len(values) < 9 and len(values) > 10:
 
     if values is None:
         # TODO: demander les valeurs ici
-        input()
-        pass
+        values = []
+        while len(values)<10:
+            values.append(input("Veuillez entrer une valeur"))
 
     return []
 
@@ -24,6 +22,9 @@ def anagrams(words: list = None) -> bool:
 
 
 def contains_doubles(items: list) -> bool:
+    items = []
+    for int in items:
+        if
     return False
 
 
