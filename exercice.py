@@ -24,16 +24,17 @@ def anagrams(words: list = None) -> bool:
 
 
 def contains_doubles(items: list) -> bool:
-    items = []
-    for i in items:
-        if (i == ):
-    return False
+    return len(set(items)) != len(items)
 
 
 def best_grades(student_grades: dict) -> dict:
     # TODO: Retourner un dictionnaire contenant le nom de l'étudiant ayant la meilleure moyenne ainsi que sa moyenne
-    {student_grades}
-    for i in grades:
+    best_students = {}
+    for key, value in student_grades.items():
+        average = sum(value) / len(value)
+
+        if len(best_students)==0 or list(best_students.values())[0] < average:
+            best_students = {key: average}
 
     return {student_grades}
 
