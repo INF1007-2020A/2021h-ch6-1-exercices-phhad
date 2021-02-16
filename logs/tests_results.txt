@@ -12,9 +12,9 @@ Traceback (most recent call last):
     output = [exercice.frequence(s) for s in sentences]
   File "test_exercice.py", line 77, in <listcomp>
     output = [exercice.frequence(s) for s in sentences]
-  File "/home/runner/work/2021h-ch6-1-exercices-phhad/2021h-ch6-1-exercices-phhad/exercice.py", line 45, in frequence
-    input("Veuillez écrire une phrase")
-EOFError: EOF when reading a line
+  File "/home/runner/work/2021h-ch6-1-exercices-phhad/2021h-ch6-1-exercices-phhad/exercice.py", line 47, in frequence
+    sorted_keys = sorted(frequency, reverse=True, key=frequency.__getitem__())
+TypeError: __getitem__() takes exactly one argument (0 given)
 
 ======================================================================
 ERROR: test_grades (__main__.TestExercice)
