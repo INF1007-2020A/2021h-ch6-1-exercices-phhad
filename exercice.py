@@ -21,11 +21,12 @@ def anagrams(words: list = None) -> bool:
             words.append((input("Veuillez entrer une chaîne de caractères")))
 
     return sorted(words[0]) == sorted(words[1])
+#if sorted == sorted return true else return false
 
 
 def contains_doubles(items: list) -> bool:
     return len(set(items)) != len(items)
-
+#
 
 def best_grades(student_grades: dict) -> dict:
     # TODO: Retourner un dictionnaire contenant le nom de l'étudiant ayant la meilleure moyenne ainsi que sa moyenne
@@ -33,7 +34,7 @@ def best_grades(student_grades: dict) -> dict:
     for key, value in student_grades.items():
         average = sum(value) / len(value)
 
-        if len(best_students)==0 or list(best_students.values())[0] < average:
+        if len(best_students) ==0 or list(best_students.values())[0] < average:
             best_students = {key: average}
 
     return {student_grades}
@@ -57,17 +58,18 @@ def get_recipes():
     # TODO: Demander le nom d'une recette, puis ses ingredients et enregistrer dans une structure de données
     nom = input("Veuillez écrire le nom d'une recette")
     ingredient = input(" Enter la liste d'ingrédients? Séparer les ingrédients par une ,\n").split(",")
-    return {nom, ingredient}
+    return {nom: ingredient}
 
 
 
 def print_recipe(ingredients) -> None:
     # TODO: Demander le nom d'une recette, puis l'afficher si elle existe
     nom = input("Veuillez écrire le nom d'une recette")
-    if nom in ingredients:
+    if nom in ingredients.keys():
+        print(nom)
         print(ingredients[nom])
     else:
-        False
+        print("la rectee n'existe pas")
 
 
 def main() -> None:
