@@ -8,7 +8,6 @@ def order(values: list = None) -> list:
         values = []
         while len(values) < 10:
             values.append(input("Please enter a value\n"))
-
     return sorted(values)
 
 
